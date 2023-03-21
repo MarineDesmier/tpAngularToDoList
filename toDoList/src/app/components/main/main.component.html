@@ -1,0 +1,26 @@
+<h3>{{ title }}</h3>
+
+<div>
+    <ul>
+        <li [id]="'item-' + items" *ngFor="let item of items">
+            <input type="text" placeholder="entrer votre tâche" [ngStyle]="myStyle">
+            <button (click)="valide()">check</button>
+        </li>
+    </ul>
+</div>
+
+<p>Ajout élement avec la correction de Mickael</p>
+<div>
+    <ul class="list-group">
+        <li 
+        (click)="changeDone(i)" 
+        [class.done]="todo.done" 
+        *ngFor="let todo of todos; index as i" 
+        #hoverName
+        (mouseenter)="onMouseEnter(hoverName)"
+        (mouseleave)="onMouseOut(hoverName)"
+        class="list-group-item">
+            {{ todo.text }}
+        </li>
+    </ul>
+</div>
