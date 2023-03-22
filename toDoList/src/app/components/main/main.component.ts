@@ -1,6 +1,7 @@
 import { style } from "@angular/animations";
 import { Component } from "@angular/core";
 
+
 @Component({
     selector: 'app-main',
     templateUrl: './main.component.html',
@@ -42,10 +43,12 @@ export class MainComponent {
         this.todos[index].done = !this.todos[index].done;
     }
     // mise en place du focus
-    onMouseEnter(hoverName: HTMLElement){
+    onMouseEnter(hoverName: HTMLElement) {
         hoverName.style.color = "blue";
     }
-    onMouseOut(hoverName: HTMLElement){
+    onMouseOut(hoverName: HTMLElement) {
         hoverName.style.color = "red";
     }
 }
+
+
