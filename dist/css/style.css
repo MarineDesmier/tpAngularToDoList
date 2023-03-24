@@ -1,7 +1,13 @@
-h1 {
+body {
+  text-align: center;
+}
+body h1 {
   color: red;
   font-size: 3rem;
   text-align: center;
+}
+body .controls {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

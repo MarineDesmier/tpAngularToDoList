@@ -1,5 +1,14 @@
-h1 {
-    color: red;
-    font-size: 3rem;
+// point d'entrée de l'application
+body{
     text-align: center;
+
+    h1 {
+        color: red;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .controls {
+        display: flex;
+    }
 }
