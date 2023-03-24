@@ -1,0 +1,8 @@
+.done {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.list-group {
+    cursor: pointer;
+}
