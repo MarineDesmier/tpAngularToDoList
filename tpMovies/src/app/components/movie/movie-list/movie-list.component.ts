@@ -8,13 +8,13 @@ import { Movie } from 'src/app/shared/models/movie';
 })
 export class MovieListComponent {
   @Input()
-  public allMovies: Movie[] = []; // initialise un tableau de films 'envoi'
+  public allMovies: Movie[] = []; 
 
   @Output('selectMovie')
   emitter = new EventEmitter<Movie>(); 
 
-  onSelectedMovie(movieId: number){
-    const selected = this.allMovies.find((m: Movie) => m.id === movieId);
-    this.emitter.emit(selected);
-  }
+  // onSelectedMovie(movieId: number){
+  //   const selected = this.allMovies.find((m: Movie) => m.id === movieId);
+  //   this.emitter.emit(selected);
+  // }
 }

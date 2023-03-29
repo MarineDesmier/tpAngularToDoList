@@ -8,6 +8,9 @@ import { MovieComponent } from './components/movie/movie.component';
 import { MovieDetailsComponent } from './components/movie/movie-details/movie-details.component';
 import { MovieFormComponent } from './components/movie/movie-form/movie-form.component';
 import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MovieListComponent } from './components/movie/movie-list/movie-list.com
     MovieListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
