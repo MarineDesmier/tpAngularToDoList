@@ -2,10 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { MovieDetailsComponent } from './components/movie/movie-details/movie-details.component';
+import { MovieFormComponent } from './components/movie/movie-form/movie-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MovieComponent,
+    MovieDetailsComponent,
+    MovieFormComponent
   ],
   imports: [
     BrowserModule
