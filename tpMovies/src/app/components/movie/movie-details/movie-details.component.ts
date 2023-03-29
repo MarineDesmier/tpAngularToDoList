@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Movie } from 'src/app/shared/models/movie';
 
 @Component({
   selector: 'app-movie-details',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./movie-details.component.css']
 })
 export class MovieDetailsComponent {
-
+  @Input('selectedMovie') selected!: Movie;
+  constructor(){}
 }
