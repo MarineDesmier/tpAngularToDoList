@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "toDoList": {
+    "tpMovies": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/to-do-list",
+            "outputPath": "dist/tp-movies",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "toDoList:build:production"
+              "browserTarget": "tpMovies:build:production"
             },
             "development": {
-              "browserTarget": "toDoList:build:development"
+              "browserTarget": "tpMovies:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "toDoList:build"
+            "browserTarget": "tpMovies:build"
           }
         },
         "test": {
