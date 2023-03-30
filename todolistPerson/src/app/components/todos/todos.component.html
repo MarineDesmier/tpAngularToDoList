@@ -1,1 +1,19 @@
-<p>todos works!</p>
+<h1>Liste des tâches</h1>
+<app-todo-form></app-todo-form>
+
+<ul class="list-group my-3">
+    <li #liTag 
+        (click)="selectTodo(todo)" 
+        (mouseenter)="liTag.classList.add('focused')"
+        (mouseout)="liTag.classList.remove('focused')" 
+        [class.done]="todo.check" 
+        *ngFor="let todo of todos$ |async"
+        class="list-group-item d-flex justify-content-between"
+    > <!-- fin li -->
+        <span>{{ todo.text }}</span>
+        <div class="buttons">
+            <button class="btn btn-sm btn-danger mx-3">✖︎</button>
+            <button [routerLink]="['/todos', todo.id]" class="btn btn-sm btn-success">✎</button>
+        </div>
+    </li>
+</ul>

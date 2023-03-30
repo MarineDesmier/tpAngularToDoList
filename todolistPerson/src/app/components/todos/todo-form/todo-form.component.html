@@ -1,1 +1,17 @@
-<p>todo-form works!</p>
+
+<h4>Nouvelles tâches à réaliser :</h4>
+<form class="d-flex flex-column text-center mx-5" #formAddTodo="ngForm" (ngSubmit)="onSubmit(formAddTodo)">
+    <div class="d-grid gap-2 col-6 mx-auto mb-3">
+        <label class="form-label" for="todo">Tâches :</label>
+        <input required class="form-control" id="todo" type="text" name="text" ngModel>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="check"> Votre tâche est elle faite ?</label><p>A cocher si réaliser !</p>
+        <input class="form-check-input mx-3" id="check" type="checkbox" name="check" ngModel >
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-info" type="submit" [disabled]="formAddTodo.invalid">C'est fait !</button>
+    </div>
+</form>

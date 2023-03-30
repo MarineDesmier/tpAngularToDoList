@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Todo } from 'src/app/shared/models/todo';
+import { TodoService } from 'src/app/shared/services/todo.service';
 
 @Component({
   selector: 'app-todo-form',
@@ -7,4 +10,15 @@ import { Component } from '@angular/core';
 })
 export class TodoFormComponent {
 
+  constructor(private _todoService: TodoService){}
+
+  onSubmit(form: NgForm){
+    if(form.valid){
+      const todo = new Todo();
+      todo.text = form.value.text;
+      todo.check = !!form.value.check;
+      this._todoService.create(todo);
+      form.reset();
+    }
+  }
 }

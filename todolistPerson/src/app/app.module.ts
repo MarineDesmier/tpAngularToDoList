@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { UserFormComponent } from './components/users/user-form/user-form.compon
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoFormComponent } from './components/todos/todo-form/todo-form.component';
 import { TodoDetailsComponent } from './components/todos/todo-details/todo-details.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { TodoDetailsComponent } from './components/todos/todo-details/todo-detai
     UserFormComponent,
     TodosComponent,
     TodoFormComponent,
-    TodoDetailsComponent
+    TodoDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
