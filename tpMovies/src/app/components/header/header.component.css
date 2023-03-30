@@ -1,0 +1,20 @@
+.bienvenu{
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: red;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
