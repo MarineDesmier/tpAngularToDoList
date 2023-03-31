@@ -13,6 +13,7 @@ import { TodoFormComponent } from './components/todos/todo-form/todo-form.compon
 import { TodoDetailsComponent } from './components/todos/todo-details/todo-details.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { TodoListComponent } from './components/todos/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     TodosComponent,
     TodoFormComponent,
     TodoDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

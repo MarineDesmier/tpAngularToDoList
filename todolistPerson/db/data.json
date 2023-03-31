@@ -1,0 +1,42 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Arroser mon citronnier",
+      "check": false
+    },
+    {
+      "id": 2,
+      "text": "Nourir Rustine",
+      "check": false
+    },
+    {
+      "id": 3,
+      "text": "tester le code",
+      "check": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nom": "Sansa",
+      "prenom": "DESMIER",
+      "email": "sansa@got.fr",
+      "password": "secret"
+    },
+    {
+      "id": 2,
+      "nom": "Rustine",
+      "prenom": "DESMIER",
+      "email": "rustine@thecat.fr",
+      "password": "secret"
+    },
+    {
+      "id": 3,
+      "nom": "Marine",
+      "prenom": "DESMIER",
+      "email": "desmier.marine@bbox.fr",
+      "password": "secret"
+    }
+  ]
+}

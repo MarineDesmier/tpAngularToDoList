@@ -1,15 +1,7 @@
-<h1>Liste de toutes les tâches</h1>
-<!-- <app-todo-form></app-todo-form> -->
-
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Choisir son filtre
-    </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" routerLink="todoList">Tâches faites</a></li>
-        <li><a class="dropdown-item" routerLink="todoList">Tâches pas faites</a></li>
-    </ul>
-</div>
+<!-- <div *ngIf="!todo.editable; else contenuCheck">
+    <h2>Liste des tâches à faire</h2>
+</div> -->
+<ng-template #contenuCheck><h2>Liste des tâches faites</h2></ng-template>
 <ul class="list-group my-3">
     <li #liTag (click)="selectTodo(todo)" (mouseenter)="liTag.classList.add('focus')"
         (mouseout)="liTag.classList.remove('focus')" [class.check]="todo.check" *ngFor="let todo of todos$ |async"
@@ -35,3 +27,5 @@
         </div>
     </li>
 </ul>
+
+

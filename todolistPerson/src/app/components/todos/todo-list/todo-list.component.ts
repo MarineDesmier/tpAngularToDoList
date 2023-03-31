@@ -3,11 +3,11 @@ import { Todo } from 'src/app/shared/models/todo';
 import { TodoService } from 'src/app/shared/services/todo.service';
 
 @Component({
-  selector: 'app-todos',
-  templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  selector: 'app-todo-list',
+  templateUrl: './todo-list.component.html',
+  styleUrls: ['./todo-list.component.css']
 })
-export class TodosComponent {
+export class TodoListComponent {
   selected!: Todo;
   constructor(private _todoService: TodoService){}
 

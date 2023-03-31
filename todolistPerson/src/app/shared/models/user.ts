@@ -5,5 +5,6 @@ export class User {
         public prenom: string,
         public email: string,
         public password: string,
+        public editable = false,
     ){}
 }
