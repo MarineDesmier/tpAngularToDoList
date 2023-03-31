@@ -2,6 +2,10 @@ footer{
     text-align: center;
     font-weight: 600;
     color: crimson;
+    /* permet de mettre le footer en bas de ma page */
+    position: absolute; 
+    bottom: 0;  
+    width: 100%;
 }
 
 hr{

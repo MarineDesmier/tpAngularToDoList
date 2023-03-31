@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-user-form',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent {
+  
+onSubmit(_t5: NgForm) {
+throw new Error('Method not implemented.');
+}
 
 }

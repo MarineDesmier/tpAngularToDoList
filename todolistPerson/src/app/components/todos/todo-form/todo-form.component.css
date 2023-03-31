@@ -5,3 +5,13 @@ p{
     font-size: 0.6rem;
     text-decoration: underline;
 }
+
+.picture {
+    margin: 30px;
+    position: relative;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
