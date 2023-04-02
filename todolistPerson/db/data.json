@@ -12,31 +12,46 @@
     },
     {
       "id": 3,
-      "text": "tester le code",
-      "check": true
+      "text": "tester le code ",
+      "check": true,
+      "editable": false
     }
   ],
   "users": [
     {
       "id": 1,
-      "nom": "Sansa",
-      "prenom": "DESMIER",
+      "nom": "DESMIER",
+      "prenom": "Sansa",
       "email": "sansa@got.fr",
-      "password": "secret"
+      "password": "chien"
     },
     {
       "id": 2,
-      "nom": "Rustine",
-      "prenom": "DESMIER",
+      "nom": "DESMIER",
+      "prenom": "Rustine",
       "email": "rustine@thecat.fr",
-      "password": "secret"
+      "password": "chat"
     },
     {
       "id": 3,
-      "nom": "Marine",
-      "prenom": "DESMIER",
+      "nom": "DESMIER",
+      "prenom": "Marine",
       "email": "desmier.marine@bbox.fr",
       "password": "secret"
+    },
+    {
+      "id": 4,
+      "nom": "DESMIER",
+      "prenom": "Cath",
+      "email": "desmier.cath@orange.fr",
+      "password": "secret6"
+    },
+    {
+      "id": 5,
+      "nom": "VOISIN",
+      "prenom": "Jean",
+      "email": "voisinj@orange.fr",
+      "password": "mdp0"
     }
   ]
 }
