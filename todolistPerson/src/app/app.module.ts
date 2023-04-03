@@ -14,6 +14,7 @@ import { TodoDetailsComponent } from './components/todos/todo-details/todo-detai
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { TodoListComponent } from './components/todos/todo-list/todo-list.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TodoListComponent } from './components/todos/todo-list/todo-list.compon
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

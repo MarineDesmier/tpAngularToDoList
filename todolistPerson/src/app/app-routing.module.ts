@@ -16,6 +16,10 @@ const routes: Routes = [
   { path: 'todos/:id', component: TodoDetailsComponent },
   { path: 'users', component: UsersComponent },
   { path: 'userForm', component: UserFormComponent },
+  { 
+    path: 'auth', 
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
   // { path: 'users/:id', component: User }, ajouter details
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
